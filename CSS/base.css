@@ -1,4 +1,8 @@
-﻿body {
+﻿/* ==================================================
+    BASE
+================================================== */
+
+body {
     background-color: #cfd5e0;
     margin: 0;
     padding-top: 70px;
@@ -7,4 +11,61 @@
 .footer-div {
     width: 130px; /*Width of the text. If text changes, modify this*/
     margin: 0 auto;
+}
+
+/* ==================================================
+    HEADER
+================================================== */
+
+.main-header {
+    display: flex;
+    background-color: #6cc9ff;
+    height: 80px;
+    justify-content: flex-end; /* Places main header at bottom/end of column */
+    flex-direction: row;
+    padding-bottom: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 3px rgb(0, 0, 0, .4);
+    z-index: 1;
+    transition: .5s;
+}
+
+.site-logo {
+    align-self: center;
+    width: 140px;
+    padding-left: 1em;
+    padding-top: 0;
+}
+
+.site-logo img {
+    width: 175px;
+    height: auto;
+    transition: .5s;
+}
+
+.search-bar {
+    align-self: center; /* Vertical align */
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.search-bar input {
+    height: 25px;
+    width: 200px;
+    border-radius: 5%;
+}
+
+/* ==================================================
+    ITEM
+================================================== */
+
+.item img {
+    max-width: 100px;
+    height: auto;
+}
+
+.item-list {
+    list-style: none;
 }
